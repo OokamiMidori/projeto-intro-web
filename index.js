@@ -97,3 +97,11 @@ if (jogo3.temNaSteam) {
   alert("O jogo " + jogo3.nome + " não tem na steam!");
 }
  console.log(superJogos)
+ 
+ //1. Reescrevendo o relatório criado utilizando console.log() que começamos na semana 2, altere a forma que a característica de array dos itens seja escrita como um laço que guarde todos os valores da propriedade array do objeto em uma mesma string. Utilize esta string no relatório.
+ 
+ 
+ for(const i in superJogos){
+  superJogos[i].premios = superJogos[i].premios.toString()
+  console.log(superJogos[i].premios);
+ }
